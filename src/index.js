@@ -698,7 +698,7 @@ class Post2 extends Component {
             clientHeight: ''
         };
 
-        this.handleClick = this.handleClick.bind(this);
+        // this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount() {
@@ -710,7 +710,17 @@ class Post2 extends Component {
         }
     }
 
-    handleClick() {
+    /* 自訂函式：直接宣告，要在constructor裡加上 this.handleClick = this.handleClick.bind(this); */
+    /* 如此才能確定this是組件，否則不能使用 this.setState (只有 react 才有的方法) */
+    // handleClick() {
+    //     SweetAlert({
+    //         title: 'clientHeight',
+    //         text: `${this.state.clientHeight}`
+    //     }).then(() => {console.log(this.state.clientHeight)})
+    // }
+
+    /*自訂函式：宣告成箭頭函式*/
+    handleClick = () => {
         SweetAlert({
             title: 'clientHeight',
             text: `${this.state.clientHeight}`
