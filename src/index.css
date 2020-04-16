@@ -1,0 +1,35 @@
+.span {
+    color: coral;
+}
+
+.title {
+    color: blue;
+}
+
+.dog {
+    width: 160px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.lesson {
+    width: 200px;
+    cursor: pointer;
+}
+
+.post-content {
+    font-size: large;
+    width: fit-content;
+    border-style: solid;
+    border-color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.refresh {
+    background-color: cadetblue;
+    margin-right: 5px;
+}
+
+.clear {
+    background-color: cadetblue;
+}
